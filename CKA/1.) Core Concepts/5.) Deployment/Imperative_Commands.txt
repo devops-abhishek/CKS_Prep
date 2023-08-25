@@ -1,0 +1,8 @@
+COMMANDS:
+
+#kubectl create -f <filename> -n <namespace>
+#kubectl get deployment -n <namespace>
+#kubectl get rs -n <namespace>
+#kubectl get pods -n <namespace>
+#kubectl scale --replicas=<number> deployment <deployment-name> -n <namespace>
+#kubectl create deployment <deployment-name> --image <image-name> --replicas <number>

@@ -1,0 +1,41 @@
+Container Runtime Engine :
+    Docker
+    Containerd
+
+Earlier kubernetes and docker was tightly coupled. But later Container Runtime Engine is loosly coupled as Kubernetes comes with Container Runtime Interface, so they can adhere with Open Container Initiative(OCI) - imagespec and runtimespec 
+
+Kubernetes uses dockershim as a hack to work with Docker as a Container Runtime Engine
+
+Docker comes with - CLI, API, BUILD, VOLUMES, AUTH, SECURITY, containerD
+
+ContainerD is CRI compatible
+
+K8s 1.24 remove dockershim completely.
+
+Commands:
+#ctr images pull <Image>
+#ctr run <Image> <Container_Name>
+
+Alternate Tool:
+nerdctl provides Docker-like CLI for Containerd
+nerdctl support docker compose
+nerdctl supports newest features in containerd
+    Encyrpted container images
+    Lazy Pulling
+    P2P image distribution
+    Image signing and verifying
+    Namespaces in kubernetes
+
+crictl is developed by Kubernetes team
+crictl provides a CLI for CRI compatible container runtimes
+Installed separately
+Used to inspect and debug container runtimes
+    Not to create containers ideally
+Works across different runtimes
+#crictl
+#crictl pull image
+#crictl images
+#crictl ps -a
+#crictl exec -it container-id bash
+#crictl logs container-id
+#crictl pods

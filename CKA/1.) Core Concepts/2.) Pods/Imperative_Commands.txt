@@ -1,0 +1,10 @@
+COMMANDS:
+
+#kubectl create -f <filename> -n <namespace>
+#kubectl run <pod-name> --image=<image-name>
+#kubectl get <pod-name> -n <namespace>
+#kubectl get <pod-name> -n <namespace> --show-labels -o wide
+#kubectl get <pod-name> -n <naemspace> -l app=nginx
+#kubectl describe pod <pod-name> -n <namespace>
+#kubectl logs -f --tail 10 <pod-name> -n <namespace>
+#kubectl delete <pod-name> -n <namespace>
