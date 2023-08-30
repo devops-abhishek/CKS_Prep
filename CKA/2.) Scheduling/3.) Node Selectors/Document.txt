@@ -1,3 +1,0 @@
-COMMANDS:
-
-#kubectl label nodes <node-name> size=large

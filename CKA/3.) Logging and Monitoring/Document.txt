@@ -1,5 +1,0 @@
-COMMANDS:
-
-#kubectl top nodes
-#kubectl top pods
-#kubectl logs -f --tail 10 <pod-name> -n <namespace>

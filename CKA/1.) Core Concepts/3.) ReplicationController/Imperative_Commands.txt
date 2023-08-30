@@ -1,6 +1,0 @@
-COMMANDS:
-
-#kubectl create -f <filename> -n <namespace>
-#kubectl get rc -n <namespace>
-#kubectl get pods -n <namespace>
-#kubectl scale --replicas=<number> rc <rs-name> -n <namespace>

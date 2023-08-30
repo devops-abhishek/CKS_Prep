@@ -1,0 +1,12 @@
+apiVersion: certificates.k8s.io/v1
+kind: CertificatesSigningRequest
+metadata:
+  name: abhishek
+spec:
+  groups:
+  - system:authenticated
+  usages:
+  - digital signature
+  - key encipherment
+  - server auth
+  request: <base-64 encoded certificate>
